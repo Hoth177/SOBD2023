@@ -56,4 +56,6 @@ filename_data = 'work/data/itineraries.csv'
 # Load the main data set into pyspark data frame 
 df = spark.read.csv(filename_data,header=True, mode="DROPMALFORMED", inferSchema=True)
 from pyspark.sql.functions import col, array
+print(df.dtypes)
 ```
+[('legId', 'string'), ('searchDate', 'date'), ('flightDate', 'date'), ('startingAirport', 'string'), ('destinationAirport', 'string'), ('fareBasisCode', 'string'), ('travelDuration', 'string'), ('elapsedDays', 'int'), ('isBasicEconomy', 'boolean'), ('isRefundable', 'boolean'), ('isNonStop', 'boolean'), ('baseFare', 'double'), ('totalFare', 'double'), ('seatsRemaining', 'int'), ('totalTravelDistance', 'int'), ('segmentsDepartureTimeEpochSeconds', 'string'), ('segmentsDepartureTimeRaw', 'string'), ('segmentsArrivalTimeEpochSeconds', 'string'), ('segmentsArrivalTimeRaw', 'string'), ('segmentsArrivalAirportCode', 'string'), ('segmentsDepartureAirportCode', 'string'), ('segmentsAirlineName', 'string'), ('segmentsAirlineCode', 'string'), ('segmentsEquipmentDescription', 'string'), ('segmentsDurationInSeconds', 'string'), ('segmentsDistance', 'string'), ('segmentsCabinCode', 'string')]
