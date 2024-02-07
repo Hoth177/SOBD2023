@@ -69,38 +69,40 @@ print(df.count())
 ```
 82138753
 ## Определяем типы признаков в датасетах
+```python
 print('Обзор данных')
 df.printSchema()
-Обзор данных
-root
- |-- legId: string (nullable = true)
- |-- searchDate: date (nullable = true)
- |-- flightDate: date (nullable = true)
- |-- startingAirport: string (nullable = true)
- |-- destinationAirport: string (nullable = true)
- |-- fareBasisCode: string (nullable = true)
- |-- travelDuration: string (nullable = true)
- |-- elapsedDays: integer (nullable = true)
- |-- isBasicEconomy: boolean (nullable = true)
- |-- isRefundable: boolean (nullable = true)
- |-- isNonStop: boolean (nullable = true)
- |-- baseFare: double (nullable = true)
- |-- totalFare: double (nullable = true)
- |-- seatsRemaining: integer (nullable = true)
- |-- totalTravelDistance: integer (nullable = true)
- |-- segmentsDepartureTimeEpochSeconds: string (nullable = true)
- |-- segmentsDepartureTimeRaw: string (nullable = true)
- |-- segmentsArrivalTimeEpochSeconds: string (nullable = true)
- |-- segmentsArrivalTimeRaw: string (nullable = true)
- |-- segmentsArrivalAirportCode: string (nullable = true)
- |-- segmentsDepartureAirportCode: string (nullable = true)
- |-- segmentsAirlineName: string (nullable = true)
- |-- segmentsAirlineCode: string (nullable = true)
- |-- segmentsEquipmentDescription: string (nullable = true)
- |-- segmentsDurationInSeconds: string (nullable = true)
- |-- segmentsDistance: string (nullable = true)
- |-- segmentsCabinCode: string (nullable = true)
- Обзор колонок
+```
+Обзор данных  
+root  
+ |-- legId: string (nullable = true)  
+ |-- searchDate: date (nullable = true)  
+ |-- flightDate: date (nullable = true)  
+ |-- startingAirport: string (nullable = true)  
+ |-- destinationAirport: string (nullable = true)  
+ |-- fareBasisCode: string (nullable = true)  
+ |-- travelDuration: string (nullable = true)  
+ |-- elapsedDays: integer (nullable = true)  
+ |-- isBasicEconomy: boolean (nullable = true)  
+ |-- isRefundable: boolean (nullable = true)  
+ |-- isNonStop: boolean (nullable = true)  
+ |-- baseFare: double (nullable = true)  
+ |-- totalFare: double (nullable = true)  
+ |-- seatsRemaining: integer (nullable = true)  
+ |-- totalTravelDistance: integer (nullable = true)  
+ |-- segmentsDepartureTimeEpochSeconds: string (nullable = true)  
+ |-- segmentsDepartureTimeRaw: string (nullable = true)  
+ |-- segmentsArrivalTimeEpochSeconds: string (nullable = true)  
+ |-- segmentsArrivalTimeRaw: string (nullable = true)  
+ |-- segmentsArrivalAirportCode: string (nullable = true)  
+ |-- segmentsDepartureAirportCode: string (nullable = true)  
+ |-- segmentsAirlineName: string (nullable = true)  
+ |-- segmentsAirlineCode: string (nullable = true)  
+ |-- segmentsEquipmentDescription: string (nullable = true)  
+ |-- segmentsDurationInSeconds: string (nullable = true)  
+ |-- segmentsDistance: string (nullable = true)  
+ |-- segmentsCabinCode: string (nullable = true)  
+ Обзор колонок  
 | | Имя колонки |	Тип данных |
 |-|-------------|------------------|
 |0|	legId|	string|
