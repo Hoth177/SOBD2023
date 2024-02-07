@@ -68,3 +68,65 @@ df.head(1)
 print(df.count())
 ```
 82138753
+## Определяем типы признаков в датасетах
+print('Обзор данных')
+df.printSchema()
+Обзор данных
+root
+ |-- legId: string (nullable = true)
+ |-- searchDate: date (nullable = true)
+ |-- flightDate: date (nullable = true)
+ |-- startingAirport: string (nullable = true)
+ |-- destinationAirport: string (nullable = true)
+ |-- fareBasisCode: string (nullable = true)
+ |-- travelDuration: string (nullable = true)
+ |-- elapsedDays: integer (nullable = true)
+ |-- isBasicEconomy: boolean (nullable = true)
+ |-- isRefundable: boolean (nullable = true)
+ |-- isNonStop: boolean (nullable = true)
+ |-- baseFare: double (nullable = true)
+ |-- totalFare: double (nullable = true)
+ |-- seatsRemaining: integer (nullable = true)
+ |-- totalTravelDistance: integer (nullable = true)
+ |-- segmentsDepartureTimeEpochSeconds: string (nullable = true)
+ |-- segmentsDepartureTimeRaw: string (nullable = true)
+ |-- segmentsArrivalTimeEpochSeconds: string (nullable = true)
+ |-- segmentsArrivalTimeRaw: string (nullable = true)
+ |-- segmentsArrivalAirportCode: string (nullable = true)
+ |-- segmentsDepartureAirportCode: string (nullable = true)
+ |-- segmentsAirlineName: string (nullable = true)
+ |-- segmentsAirlineCode: string (nullable = true)
+ |-- segmentsEquipmentDescription: string (nullable = true)
+ |-- segmentsDurationInSeconds: string (nullable = true)
+ |-- segmentsDistance: string (nullable = true)
+ |-- segmentsCabinCode: string (nullable = true)
+ Обзор колонок
+| | Имя колонки |	Тип данных |
+|-|-------------|------------------|
+|0|	legId|	string|
+|1|	searchDate|	date|
+|2|	flightDate|	date|
+|3|	startingAirport|	string|
+|4|	destinationAirport|	string|
+|5|	fareBasisCode|	string|
+|6|	travelDuration|	string|
+|7|	elapsedDays|	int|
+|8|	isBasicEconomy|	boolean|
+|9|	isRefundable|	boolean|
+|10|	isNonStop|	boolean|
+|11|	baseFare|	double|
+|12|	totalFare|	double|
+|13|	seatsRemaining|	int|
+|14|	totalTravelDistance|	int|
+|15|	segmentsDepartureTimeEpochSeconds|	string|
+|16|	segmentsDepartureTimeRaw|	string|
+|17|	segmentsArrivalTimeEpochSeconds|	string|
+|18|	segmentsArrivalTimeRaw|	string|
+|19|	segmentsArrivalAirportCode|	string|
+|20|	segmentsDepartureAirportCode|	string|
+|21|	segmentsAirlineName|	string|
+|22|	segmentsAirlineCode|	string|
+|23|	segmentsEquipmentDescription|	string|
+|24|	segmentsDurationInSeconds|	string|
+|25|	segmentsDistance|	string|
+|26|	segmentsCabinCode|	string|
